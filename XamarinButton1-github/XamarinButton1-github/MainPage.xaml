@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="Black" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinButton1_github.MainPage">
+    <StackLayout>
+    <Frame CornerRadius="20" Margin="20,20,20,20" BackgroundColor="White" VerticalOptions="FillAndExpand">
+            <StackLayout Margin="0,50,0,0">
+                
+                
+            <!--######################## BUTTON-1 + ANIMATION ############################-->
+            <Frame x:Name="Button1" BackgroundColor="WhiteSmoke" CornerRadius="10" HeightRequest="50" WidthRequest="200" Padding="4" Margin="0,50,0,0">
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="1">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="Button1Tapp" Tapped="Button1Tapp_Tapped"/>
+                    </Frame.GestureRecognizers>
+                        <Label Text="BUTTON-1" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                </Frame>
+            </Frame>
+
+
+            <!--######################## BUTTON-2 + ANIMATION ############################-->
+            <Frame x:Name="Button2" BackgroundColor="Black" HasShadow="True" CornerRadius="10" HeightRequest="50" WidthRequest="200" Padding="2" Margin="0,50,0,0">
+                <Frame x:Name="Button2Inside" BackgroundColor="#171616" CornerRadius="10" Padding="1" HasShadow="True">
+                    <Frame.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="Button2Tapp" Tapped="Button2Tapp_Tapped"/>
+                    </Frame.GestureRecognizers>
+                        <Label Text="BUTTON-2" TextColor="White" HorizontalOptions="Center" VerticalTextAlignment="Center"/>
+                </Frame>
+            </Frame>
+
+
+            
+            <!--######################## BUTTON-3 + ANIMATION ############################-->
+            <Frame x:Name="Button3" BackgroundColor="#112911" HasShadow="True" CornerRadius="10" HeightRequest="50" WidthRequest="200" Padding="2" Margin="0,50,0,0">
+                 <Frame x:Name="Button3first" BackgroundColor="#003C00" CornerRadius="10" Padding="1" HasShadow="True">
+                    <Frame.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="Button3Tapp" Tapped="Button3Tapp_Tapped"/>
+                    </Frame.GestureRecognizers>
+                        <Label x:Name="lblBtn3" Text="BUTTON-3" TextColor="White" HorizontalOptions="Center" VerticalTextAlignment="Center"/>
+                 </Frame>
+            </Frame>
+
+
+
+            <!--######################## BUTTON-4 + ANIMATION ############################-->
+            <Frame x:Name="Button4" BackgroundColor="Black" HasShadow="True" CornerRadius="50" HeightRequest="50" WidthRequest="50" Padding="2" HorizontalOptions="Center" Margin="0,50,0,0">
+                 <Frame BackgroundColor="#00003F" CornerRadius="50" Padding="1" HasShadow="True">
+                     <Frame.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="Button4Tapp" Tapped="Button4Tapp_Tapped"/>
+                     </Frame.GestureRecognizers>
+                        <Label Text="BTN4" FontSize="10" TextColor="White" HorizontalOptions="Center" VerticalTextAlignment="Center"/>
+                 </Frame>
+            </Frame>
+
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>
